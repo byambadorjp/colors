@@ -22,10 +22,19 @@ body {
 }
 
 #a {
-    color: red;
+  color: red;
+  border: black;
 }
 
 #f {
     font-style: italic;
     color: maroon;
+}
+.alimaa{
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: red solid;
+    border-radius: 2%;
 }
