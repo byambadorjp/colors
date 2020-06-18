@@ -17,7 +17,7 @@
         <div class='chars' style="color: blue;">B</div>
         <div class='chars' style="color: yellow">C</div>
         <div class='chars' style="color: pink">D</div>
-        <div class='chars' style="color: green">E</div>
+        <div class='chars' onclick="changer()" id="lol" style="color: black">Tap Here</div>
         <div class='chars' id='f'>F</div>
         <div class='chars'>G</div>
         <div class='chars'>H</div>
@@ -30,5 +30,30 @@
         <div class='chars'>O</div>
     </div>
 </body>
+<script>
+    function changer() {
+            document.body.style.background="black"
+            document.body.style.display.none="none";
+            document.getElementsByTagName("h1")[0].style.display="none";
+            for (let i = 0; i < document.getElementsByClassName("chars").length; i++) {
+                document.getElementsByClassName("chars")[i].style.display="none";
+            }
+            let bigE=document.createElement("div")
+            bigE.innerText="E";
+            bigE.classList.add("big");
+            bigE.addEventListener("click", back)
+            document.body.appendChild(bigE);    
+    }
+    function back(){
+        document.body.style.display.none="block";
+        let bigE=document.getElementsByClassName("big")[0];
+        document.body.removeChild(bigE);
+        document.body.style.background="white";
+        document.getElementsByTagName("h1")[0].style.display="inline";
+        for (let i = 0; i < document.getElementsByClassName("chars").length; i++) {
+            document.getElementsByClassName("chars")[i].style.display="inline";
+        }   
+    }
+</script>
 
 </html>

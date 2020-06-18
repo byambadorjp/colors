@@ -29,3 +29,25 @@ body {
     font-style: italic;
     color: maroon;
 }
+#lol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    font-size: 1000px;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    color: red
+}
