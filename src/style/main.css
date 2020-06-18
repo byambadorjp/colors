@@ -24,3 +24,8 @@ body {
 #a {
     color: red;
 }
+
+#f {
+    font-style: italic;
+    color: maroon;
+}
