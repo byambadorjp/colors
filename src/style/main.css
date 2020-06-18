@@ -29,3 +29,11 @@ body {
     font-style: italic;
     color: maroon;
 }
+.jam {
+    height: 200px;
+}
+.J {
+    display: flex;
+    align-items: flex-start;
+    
+}
