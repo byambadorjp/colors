@@ -135,3 +135,17 @@ body {
     display: flex;
     align-items: flex-start;
 }
+
+.char-o {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px olivedrab solid;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.char-o img {
+    /* width: 100%; */
+    height: 100%;
+}
