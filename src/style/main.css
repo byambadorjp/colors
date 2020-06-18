@@ -29,3 +29,18 @@ body {
     font-style: italic;
     color: maroon;
 }
+#l{ 
+    color:deeppink;
+    font-family: "Lucida Console", Courier, monospace;
+}
+#img{
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+}
+#LL:hover #img{
+    opacity: 1;
+}
+#LL:hover #l{
+    display: none;
+}
