@@ -29,3 +29,12 @@ body {
     font-style: italic;
     color: maroon;
 }
+
+#b {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
