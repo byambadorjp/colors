@@ -40,6 +40,7 @@
             padding-left: 200px;
         }
     </style>
+    <script src="scsript.js"></script>
 </head>
 
 <body>
@@ -60,9 +61,10 @@
         <div class='chars' id='D'>D d
             <img src="https://cdn.pixabay.com/photo/2020/02/12/05/16/dog-cartoon-4841703_960_720.jpg">
         </div>
-        <div class='chars' style="color: green">E</div>
+        <div class='chars' onclick="changer()" id="lol" style="color: black">Tap Here</div>
         <div class='chars' id='f'>F</div>
-        <div class='chars'>G</div>
+        <div class='chars' id="g" onclick="clickedg()">G
+        </div>
         <div class='chars' id='H'>H
 
             <div>Hamburger
@@ -74,7 +76,10 @@
         <div class="container">
             <img width="200px" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9BPNljmFyB69_anpHThyKhNZeL6woD4KBHbescNkoU_B2DdSl&usqp=CAU" alt="">
         </div>
-        <div class='chars'>L</div>
+        <div class='chars' id="LL">
+            <div id='l'>L</div>
+            <img src="./l-death-note-1337.jpg" alt="" id="img">
+        </div>
         <div class="chars" id="M">
             Mm
             <img src="./cute-monkey-cartoon_146562-7.jpg" alt="monkey" />
@@ -87,16 +92,33 @@
             O
             <img src="https://i.pinimg.com/originals/24/c9/4f/24c94f639e202c5a4127c86f3dd0d458.png" alt="olaf" />
         </div>
-        <div class='chars'>J</div>
-        <div class='chars'>K</div>
-        <div class='chars' id="LL">
-            <div id='l'>L</div>
-            <img src="./l-death-note-1337.jpg" alt="" id="img">
-        </div>
-        <div class='chars'>M</div>
-        <div class='chars'>N</div>
-        <div class='chars'>O</div>
+        
     </div>
 </body>
+<script>
+    function changer() {
+            document.body.style.background="black"
+            document.body.style.display.none="none";
+            document.getElementsByTagName("h1")[0].style.display="none";
+            for (let i = 0; i < document.getElementsByClassName("chars").length; i++) {
+                document.getElementsByClassName("chars")[i].style.display="none";
+            }
+            let bigE=document.createElement("div")
+            bigE.innerText="E";
+            bigE.classList.add("big");
+            bigE.addEventListener("click", back)
+            document.body.appendChild(bigE);    
+    }
+    function back(){
+        document.body.style.display.none="block";
+        let bigE=document.getElementsByClassName("big")[0];
+        document.body.removeChild(bigE);
+        document.body.style.background="white";
+        document.getElementsByTagName("h1")[0].style.display="inline";
+        for (let i = 0; i < document.getElementsByClassName("chars").length; i++) {
+            document.getElementsByClassName("chars")[i].style.display="inline";
+        }   
+    }
+</script>
 
 </html>
