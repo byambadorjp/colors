@@ -29,3 +29,10 @@ body {
     font-style: italic;
     color: maroon;
 }
+.container{
+    border:solid;
+    border-width:3px;
+    border-radius:5px;
+    width:20vw;
+    height:15vh;
+}
