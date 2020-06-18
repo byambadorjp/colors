@@ -1,36 +1,37 @@
 body {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 .flex-wrap {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .chars {
-  height: 200px;
-  width: 22%;
-  font-size: 40px;
+    height: 200px;
+    width: 22%;
+    font-size: 40px;
 }
 
 #a {
-  color: red;
-  border: black;
+    color: red;
+    border: black;
 }
 
 #f {
     font-style: italic;
     color: maroon;
 }
-.alimaa{
+
+.alimaa {
     color: red;
     display: flex;
     justify-content: space-between;
@@ -64,13 +65,22 @@ body {
     height: 100%;
 }
 
-.container{
-    border:solid;
-    border-width:3px;
-    border-radius:5px;
-    width:20vw;
-    height:15vh;
+.container {
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    width: 20vw;
+    height: 15vh;
     align-items: flex-end;
     border: red solid;
     border-radius: 2%;
+}
+
+#b {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 200px;
 }
